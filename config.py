@@ -8,7 +8,7 @@ class Config(object):
         self.ndf = 32
         self.lr1 = 1e-3
         self.lr2 = 1e-3
-        self.gpu = False
+        self.gpu = True
         self.root = '/kaggle/input/anime-faces/data/'
         self.batch_size = 32
         self.num_workers = 4
