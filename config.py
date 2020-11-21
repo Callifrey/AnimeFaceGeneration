@@ -16,8 +16,8 @@ class Config(object):
         self.beta = 0.9
         self.nz = 128
 
-        self.d_every = 2
+        self.d_every = 1
         self.g_every = 1
 
         self.verbose = 10
-        self.save_path = '/kaggle/output/'
+        self.save_path = '/kaggle/working/AnimeFaceGeneration/output/'
