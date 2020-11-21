@@ -65,6 +65,8 @@ def train():
                 generate_img = Gnet(noise)
                 fake_out = Dnet(generate_img)
                 g_loss = criterions(fake_out, real_label)
+                g_loss.backward()
+                G_optimizer.step()
                 if idx % opt.verbose == 0:
                     print('Epoch: {}, iteration: {}, g_loss {}'.format(epoch, idx, g_loss.item()))
             if idx % 100 == 0:
@@ -75,8 +77,7 @@ def train():
                     os.mkdir(img_save_path)
                 torchvision.utils.save_image(fix_fake_image[:16], '%s/%s_%s.png' % (img_save_path, epoch,idx), nrow=4)
 
-                g_loss.backward()
-                G_optimizer.step()
+               
         if epoch % 10 == 0:
             # save model
             checkpoint_path = os.path.join(opt.save_path, 'checkpoints')
