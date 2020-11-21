@@ -53,9 +53,9 @@ def train():
                 fake_out = Dnet(generate_img)
                 d_loss_real = criterions(real_out, real_label)
                 d_loss_fake = criterions(fake_out, fake_label)
-                d_loss = d_loss_fake.item() + d_loss_real.item()
+                d_loss = d_loss_fake + d_loss_real
                 if idx % opt.verbose == 0:
-                    print('Epoch: {},iteration: {},d_loss: {}'.format(epoch, idx, d_loss))
+                    print('Epoch: {},iteration: {},d_loss: {}'.format(epoch, idx, d_loss.item()))
                 d_loss_real.backward()
                 d_loss_fake.backward()
                 D_optimizer.step()
