@@ -12,7 +12,7 @@ class Config(object):
         self.root = '/kaggle/input/anime-faces/data/'
         self.batch_size = 32
         self.num_workers = 4
-        self.epoch = 10
+        self.epoch = 100
         self.beta = 0.9
         self.nz = 128
 
