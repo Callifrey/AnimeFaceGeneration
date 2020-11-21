@@ -9,7 +9,7 @@ class Config(object):
         self.lr1 = 1e-3
         self.lr2 = 1e-3
         self.gpu = False
-        self.root = './data/data'
+        self.root = '/kaggle/input/anime-face/data/'
         self.batch_size = 32
         self.num_workers = 4
         self.epoch = 10
@@ -20,4 +20,4 @@ class Config(object):
         self.g_every = 1
 
         self.verbose = 10
-        self.save_path = '.\out'
+        self.save_path = '/kaggle/output'
