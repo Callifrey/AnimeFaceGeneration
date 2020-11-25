@@ -4,20 +4,26 @@
 
 class Config(object):
     def __init__(self):
-        self.ngf = 32
-        self.ndf = 32
-        self.lr1 = 1e-3
-        self.lr2 = 1e-3
+        self.ngf = 64
+        self.ndf = 64
+        self.lr1 = 1e-4
+        self.lr2 = 1e-4
         self.gpu = True
-        self.root = '/kaggle/input/anime-faces/data/'
+        self.root = './data/data'
         self.batch_size = 32
         self.num_workers = 4
-        self.epoch = 100
+        self.epoch = 400
         self.beta = 0.9
-        self.nz = 128
+        self.nz = 100
 
-        self.d_every = 1
+        self.d_every = 2
         self.g_every = 1
 
         self.verbose = 10
-        self.save_path = '/kaggle/working/AnimeFaceGeneration/output/'
+        self.save_path = './data/out'
+        self.load_state = False
+        self.state_path = './data/out/checkpoints'
+        self.state_num = 390
+        self.test_out = './data/out/test'
+
+

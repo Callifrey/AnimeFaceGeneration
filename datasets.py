@@ -8,7 +8,9 @@ import numpy as np
 
 class AnimeFaceDatasets(Dataset):
     def __init__(self, root=''):
-        self.transforms = transforms.Compose([transforms.Resize((64,64)),transforms.ToTensor()])
+        self.transforms = transforms.Compose([transforms.Resize((64,64)),
+                                              transforms.ToTensor(),
+                                              transforms.Normalize((0.5,0.5,0.5),(0.5,0.5,0.5))])
         self.root = root
         img_path = os.listdir(root)  # abs path for all images
         self.img_path = [os.path.join(root, k) for k in img_path]
