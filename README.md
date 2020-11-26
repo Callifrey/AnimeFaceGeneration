@@ -2,7 +2,7 @@
 
 ### Description
 
-This is a anime faces genration demo based on  DCGAN(Deep Convolutional GAN), the framework including:
+This is a anime faces generation demo based on  DCGAN(Deep Convolutional GAN), the framework including:
 
 - Generator: Consist of one linear layer and 4 transpose Conv layers, output [3,64,64]
 - Discriminator: 5 layers strides convolution to output score for input
@@ -10,7 +10,7 @@ This is a anime faces genration demo based on  DCGAN(Deep Convolutional GAN), th
 #### Notice:
 
 - Generator and Discriminator use Batch Normalization and ReLU activation function in all Linear / Conv/ Transpose Conv blocks.
-- Use Tanh for last layer of Generaotr, instead of Sigmoid for Discriminator
+- Use Tanh for last layer of Generator, instead of Sigmoid for Discriminator
 
 
 
@@ -30,7 +30,7 @@ You can train the model by run:
 python train.py
 ```
 
-Maybe you need to change some hyperparameters and data path by modifing [**config.py**](./config.py)
+Maybe you need to change some hyper-parameters and data path by modifying [**config.py**](./config.py)
 
 
 
@@ -80,5 +80,5 @@ Next, the test result for final model(epoch = 400)
 
 ### Acknowlegement
 
-Thanks to Google Colab offering free GPU for accelerate computing.
+Thanks to Google Colab offering free GPU for accelerating computing.
 
