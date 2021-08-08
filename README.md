@@ -48,12 +48,12 @@ python test.py
 
 Here are some generate anime faces under different epochs in training:
 
-| Epoch 0                                      | Epoch 10                                      |
-| -------------------------------------------- | --------------------------------------------- |
-| ![0.png](./data/out/result/0_400.png)        | ![10_400.png](./data/out/result/10_400.png)   |
-| **Epoch 50**                                 | **Epoch 100**                                 |
+|                   Epoch 0                    |                   Epoch 10                    |
+| :------------------------------------------: | :-------------------------------------------: |
+|    ![0.png](./data/out/result/0_400.png)     |  ![10_400.png](./data/out/result/10_400.png)  |
+|                 **Epoch 50**                 |                 **Epoch 100**                 |
 | ![50_400.png](./data/out/result/50_400.png)  | ![100_400.png](./data/out/result/100_400.png) |
-| **Epoch 200**                                | **Epoch 400**                                 |
+|                **Epoch 200**                 |                 **Epoch 400**                 |
 | ![50_400.png](./data/out/result/200_400.png) | ![400_400.png](./data/out/result/399_400.png) |
 
 
@@ -76,4 +76,4 @@ Next, the test result for final model(epoch = 400)
 
 ### Acknowlegement
 
-Thanks to Google Colab offering free GPU for accelerate computing.
+Thanks to Google Colab offering free GPU for accelerating computing.
