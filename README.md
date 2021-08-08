@@ -76,4 +76,4 @@ Next, the test result for final model(epoch = 400)
 
 ### Acknowlegement
 
-Thanks to Google Colab offering free GPU for accelerating computing.
+Thanks to Google Colab offering free GPU for accelerate computing.
